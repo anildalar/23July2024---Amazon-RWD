@@ -126,6 +126,26 @@
               background-position:-18px -36px;
               background-repeat: no-repeat;
             }
+            .a_submenu{
+              width: 220px;
+              height:400px;
+              z-index: 1000;
+              top:50px !important;
+              display: none;/*Hide*/
+            }
+            .a_submenu > li >a:hover,.a_ur_menu > li > a:hover{
+              color:orange;
+              text-decoration: underline;
+            }
+
+            .a_menu > li:hover > ul{
+              display:block;/*Show*/
+            }
+            .a_submenu2{
+              width: 440px;
+              left:-200px !important;
+            }
+            
         </style>
     </head>
     <body>
@@ -339,15 +359,99 @@
                     </form>
                   </div>
                   <div class="col-3 a_tbdr">
-                    <ul class="nav h-100">
-                        <li class="nav-item">
+                    <ul class="nav h-100 a_menu">
+                        <li class="nav-item position-relative">
                           <a class="nav-link text-white active" aria-current="page" href="#">
                             <span class="sprite d-inline-block"></span>
-                            EN
+                            EN<i class="fa-solid fa-caret-down text-light"></i>
                           </a>
+                          <ul class="nav a_submenu position-absolute top-0 start-0 bg-white rounded-1">
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> <input type="radio"/> English-EN</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> <input type="radio"/> English-EN</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> <input type="radio"/> English-EN</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> <input type="radio"/> English-EN</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> <input type="radio"/> English-EN</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> <input type="radio"/> English-EN</a>
+                              </li>
+                          </ul>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-white" href="#">B</a>
+                        <li class="nav-item position-relative">
+                          <a class="nav-link text-white" href="#">
+                            <span class="d-block " style="font-size:0.8em;">Hello, sign in</span>
+                            <span class="d-block fw-bolder">Account & List <i class="fa-solid fa-caret-down text-light"></i></span>
+                          </a>
+                          <ul class="nav a_submenu a_submenu2 position-absolute top-0 start-0 bg-white rounded-1">
+                            <li class="nav-item h-25">
+                              
+                            </li>
+                            <li class="nav-item h-75">
+                              <div class="row m-0 h-100">
+                                <div class="col-6 p-0 a_tbdr h-100">
+                                  <h5>Your Lists</h5>
+                                  <ul class="nav flex-column a_ur_menu">
+                                    <li class="nav-item ms-3 p-0">
+                                      <a href="#" class="nav-link p-0">A</a>
+                                    </li>
+                                    <li class="nav-item ms-3 p-0">
+                                      <a href="#" class="nav-link p-0">A</a>
+                                    </li>
+                                    <li class="nav-item ms-3 p-0">
+                                      <a href="#" class="nav-link p-0">A</a>
+                                    </li>
+                                    <li class="nav-item ms-3 p-0">
+                                      <a href="#" class="nav-link p-0">A</a>
+                                    </li>
+                                    <li class="nav-item ms-3 p-0">
+                                      <a href="#" class="nav-link p-0">A</a>
+                                    </li>
+                                    <li class="nav-item ms-3 p-0">
+                                      <a href="#" class="nav-link p-0">A</a>
+                                    </li>
+                                    <li class="nav-item ms-3 p-0">
+                                      <a href="#" class="nav-link p-0">A</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="col-6 p-0 a_tbdr h-100">
+                                  <h5>Your Account</h5>
+                                  <ul class="nav flex-column a_ur_menu">
+                                    <li class="nav-item ms-3 p-0">
+                                      <a href="#" class="nav-link p-0">A</a>
+                                    </li>
+                                    <li class="nav-item ms-3 p-0">
+                                      <a href="#" class="nav-link p-0">A</a>
+                                    </li>
+                                    <li class="nav-item ms-3 p-0">
+                                      <a href="#" class="nav-link p-0">A</a>
+                                    </li>
+                                    <li class="nav-item ms-3 p-0">
+                                      <a href="#" class="nav-link p-0">A</a>
+                                    </li>
+                                    <li class="nav-item ms-3 p-0">
+                                      <a href="#" class="nav-link p-0">A</a>
+                                    </li>
+                                    <li class="nav-item ms-3 p-0">
+                                      <a href="#" class="nav-link p-0">A</a>
+                                    </li>
+                                    <li class="nav-item ms-3 p-0">
+                                      <a href="#" class="nav-link p-0">A</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link text-white" href="#">C</a>
