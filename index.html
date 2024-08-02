@@ -145,7 +145,18 @@
               width: 440px;
               left:-200px !important;
             }
-            
+            .a_slider_control{
+              height:250px;
+              width: 84px;
+            }
+            .a_slider_control:active,.a_slider_control:visited{
+              border:3px solid #fff;
+            }
+            .a_mainBottomContainer{
+            }
+            .a_main2 > .row{
+              height: 421px;
+            }
         </style>
     </head>
     <body>
@@ -514,7 +525,7 @@
         </header>
         <main class="a_tbdr">
             <div class="container-fluid">
-                <div class="a_main1 a_tbdr">
+                <div class="a_main1 a_tbdr position-relative" style="z-index:1000 !important">
                     <div id="carouselExample" class="carousel slide">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
@@ -530,41 +541,57 @@
                             <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/devjyoti/GW/Uber/Nov/D103625178_DesktopTallHero_3000x1200_V3._CB558389732_.jpg" class="d-block w-100" alt="...">
                           </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <button class="rounded-1 carousel-control-prev a_slider_control" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <button class="rounded-1 carousel-control-next a_slider_control" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
                     </div>
                 </div>
-                <div class="a_main2 a_tbdr">
-                    main2
-                </div>
-                <div class="a_main3 a_tbdr">
-                    main3
-                </div>
-                <div class="a_main4 a_tbdr">
-                    main4
-                </div>
-                <div class="a_main5 a_tbdr">
-                    main5
-                </div>
-                <div class="a_main6 a_tbdr">
-                    main6
-                </div>
-                <div class="a_main7 a_tbdr">
-                    main7
-                </div>
-                <div class="a_main8 a_tbdr">
-                    <div class="row">
-                        <div class="col-8 a_tbdr offset-2 h-100 bg-white">Main8</div>
-                    </div>
-                </div>
-                <div class="a_main9 a_tbdr">
-                    main9
+                <div class="a_tbdr ps-3 pe-3 a_mainBottomContainer position-relative" style="z-index:2000">
+                  <div class="a_main2 a_tbdr">
+                     <div class="row m-0">
+                        <div class="col ps-0 pe-2 a_tbdr">
+                          <div class="bg-white h-100">A</div>
+                        </div>
+                        <div class="col ps-2 pe-2 a_tbdr">
+                          <div class="bg-white h-100">B</div>
+                        </div>
+                        <div class="col ps-2 pe-2 a_tbdr">
+                          <div class="bg-white h-100">C</div>
+                        </div>
+                        <div class="col ps-2 pe-0 a_tbdr">
+                          <div class="bg-white h-50 mb-3 a_tbdr">D1</div>
+                          <div class="bg-white h-25 a_tbdr" style="height:194px !important;">D2</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="a_main3 a_tbdr">
+                      main3
+                  </div>
+                  <div class="a_main4 a_tbdr">
+                      main4
+                  </div>
+                  <div class="a_main5 a_tbdr">
+                      main5
+                  </div>
+                  <div class="a_main6 a_tbdr">
+                      main6
+                  </div>
+                  <div class="a_main7 a_tbdr">
+                      main7
+                  </div>
+                  <div class="a_main8 a_tbdr">
+                      <div class="row">
+                          <div class="col-8 a_tbdr offset-2 h-100 bg-white">Main8</div>
+                      </div>
+                  </div>
+                  <div class="a_main9 a_tbdr">
+                      main9
+                  </div>
                 </div>
             </div>
             <div class="a_main_last a_tbdr bg-white">
