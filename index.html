@@ -133,7 +133,7 @@
             .a_submenu{
               width: 220px;
               height:400px;
-              z-index: 1000;
+              z-index: 10000 !important; 
               top:50px !important;
               display: none;/*Hide*/
             }
@@ -181,9 +181,7 @@
               }
             }
             @media only screen and (min-width: 576px) {
-              .header_bottom > ul{
-                display: inline-block !important;
-              }
+              
             }
         </style>
     </head>
@@ -340,7 +338,7 @@
         <header class="">
             <div class="header_top">
                 <div class="row m-0 h-100">
-                  <div class="col-12 col-sm-3  a_tbdr">
+                  <div class="col-12 col-sm-12 col-md-3  a_tbdr">
                     <ul class="nav h-100">
                       <li class="clearfix nav-item mt-1 mb-1">
                         <button class="btn float-start d-block d-sm-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -360,7 +358,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="col-12 col-sm-6 a_tbdr">
+                  <div class="col-12 col-sm-12 col-md-6 a_tbdr">
                     <form class="row m-0 mt-2">
                       <div class="col-1 p-0">
                         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">                        
@@ -400,10 +398,10 @@
                       
                     </form>
                   </div>
-                  <div class="col-12 col-sm-3 a_tbdr">
-                    <ul class="nav h-100 a_menu d-none d-sm-inline-block">
+                  <div class="col-12 col-sm-12 col-md-3 a_tbdr">
+                    <ul class="nav h-100 a_menu d-none d-sm-none d-md-flex">
                         <li class="nav-item position-relative">
-                          <a class="nav-link text-white active" aria-current="page" href="#">
+                          <a class="nav-link p-0 text-white active" aria-current="page" href="#">
                             <span class="sprite d-inline-block"></span>
                             EN<i class="fa-solid fa-caret-down text-light"></i>
                           </a>
@@ -429,7 +427,7 @@
                           </ul>
                         </li>
                         <li class="nav-item position-relative">
-                          <a class="nav-link text-white" href="#">
+                          <a class="nav-link p-0 text-white" href="#">
                             <span class="d-block " style="font-size:0.8em;">Hello, sign in</span>
                             <span class="d-block fw-bolder">Account & List <i class="fa-solid fa-caret-down text-light"></i></span>
                           </a>
@@ -496,15 +494,17 @@
                           </ul>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-white" href="#">C</a>
+                          <a class="nav-link p-0 text-white" href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>Return Order
+                          </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-white" href="#">
+                          <a class="nav-link p-0 text-white" href="#">
                             <i class="fa-solid fa-cart-shopping"></i>Cart
                           </a>
                         </li>
                     </ul>
-                    <ul class="nav d-sm-none">
+                    <ul class="nav d-md-none">
                       <li class="nav-item">
                         <a class="nav-link text-white  active" aria-current="page" href="#">Shop By <br/> Category</a>
                       </li>
@@ -522,10 +522,10 @@
                 </div>
             </div>
             <div class="header_bottom">
-                <ul class="nav d-none d-inline">
+                <ul class="nav d-none d-sm-none d-md-none d-lg-flex">
                     <li class="nav-item">
                         <a class="nav-link text-white active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="fa-solid fa-bars"></i> All
+                            <i class="fa-solid fa-bars"></i> All123
                         </a>
                     </li>
                     <li class="nav-item">
@@ -684,7 +684,7 @@
                       </button>
                     </div>
                   </div>
-                  <div class="a_main3 a_tbdr">
+                  <section class="a_main3 a_tbdr">
                     <div id="carouselExample3" class="carousel slide h-100">
                       <div class="carousel-inner h-100">
                         <div class="carousel-item active h-100">
@@ -735,8 +735,8 @@
                         <span class="visually-hidden">Next</span>
                       </button>
                     </div>
-                  </div>
-                  <div class="a_main4">
+                  </section>
+                  <section class="a_main4">
                     Blockbuster deals
                     <div class="row d-sm-none bg-white rounded-4 shadow-lg">
                       <div class="col-6 p-3 pb-5 a_tbdr text-center position-relative">
@@ -849,24 +849,24 @@
                         <span class="visually-hidden">Next</span>
                       </button>
                     </div>
-                  </div>
-                  <div class="a_main5 a_tbdr">
+                  </section>
+                  <section class="a_main5 a_tbdr">
                       main5
-                  </div>
-                  <div class="a_main6 a_tbdr">
+                  </section>
+                  <section class="a_main6 a_tbdr">
                       main6
-                  </div>
-                  <div class="a_main7 a_tbdr">
+                  </section>
+                  <section class="a_main7 a_tbdr">
                       main7
-                  </div>
-                  <div class="a_main8 a_tbdr">
+                  </section>
+                  <section class="a_main8 a_tbdr">
                       <div class="row">
                           <div class="col-8 a_tbdr offset-2 h-100 bg-white">Main8</div>
                       </div>
-                  </div>
-                  <div class="a_main9 a_tbdr">
+                  </section>
+                  <section class="a_main9 a_tbdr">
                       main9
-                  </div>
+                  </section>
                 </div>
             </div>
             <div class="a_main_last a_tbdr bg-white">
